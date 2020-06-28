@@ -7,18 +7,16 @@ const App = () => {
 	const [image, setImage] = useState([]);
 
 	useEffect(() => {
-		Axios.get(`https://swapi.dev/people/`)
-			.then((results) => {
-				console.log("Results from useEffect of NasaAPI", results);
-				setImage(results.data);
-				console.log(results.data);
+		Axios.get(`https://swapi.py4e.com/api/people`)
+			.then((image) => {
+				//console.log("Results from useEffect of Star Wars API", image);
+				setImage(image.data.results);
+				console.log(image.data);
 			})
 			.catch((err) => {
-				console.log("Error occured in useEffect of NasaAPI: ", err);
+				console.log("Error occured in useEffect of Star Wars API: ", err);
 			});
 	}, []);
-	// Try to think through what state you'll need for this app before starting. Then build out
-	// the state properties here.
 
 	// Fetch characters from the API in an effect hook. Remember, anytime you have a
 	// side effect in a component, you want to think about which state and/or props it should
@@ -27,7 +25,9 @@ const App = () => {
 	return (
 		<div className="App">
 			<h1 className="Header">Characters</h1>
-			<Character image={image} />
+			 {image.map((c) => (
+				<Character key={c.id} bio={c} />
+			))}
 		</div>
 	);
 };
