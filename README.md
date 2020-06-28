@@ -30,15 +30,15 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-React is a library created by the facebook team that allows developers to use a component centered approach to development.
+React is a library created by the facebook team that allows developers to use a component centered approach to development. It saves alot of time by creating re-usable componants that can be populated with data. 
 
 1. Describe component state.
 
-Component state is a hook that allows for the implentation of data via the switching and controlling of the state the data is in.
+Component state is a hook that allows for the implentation of data via the switching and controlling of the state the data is in. I think of it like a way to automatically change the arguments you feed your props. 
 
 1. Describe props.
 
-Props are placeholders that allow you to pass values and data down the component chain.
+Props are placeholders that allow you to pass values and data down the component chain. They allow you to populate your components with data. 
 
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
 
