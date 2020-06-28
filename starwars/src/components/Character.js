@@ -20,26 +20,26 @@ const Character = (props) => {
 			<div className="App">
 				<h1 className="Header">{props.bio.name}</h1>
 				<InnerDiv>
-					<h2>{props.bio.birth_year}</h2>
+					<h2>BIRTH YEAR: {props.bio.birth_year}</h2>
 				</InnerDiv>
 				<InnerDiv>
-					<h2>{props.bio.eye_color}</h2>
+					<h2>EYE COLOR: {props.bio.eye_color}</h2>
 				</InnerDiv>
 				<InnerDiv>
-					<h2>{props.bio.gender}</h2>
+					<h2>GENDER: {props.bio.gender}</h2>
 				</InnerDiv>
 
 				<InnerDiv>
-					<h2>{props.bio.hair_color}</h2>
+					<h2>HAIR COLOR: {props.bio.hair_color}</h2>
 				</InnerDiv>
 				<InnerDiv>
-					<h2>{props.bio.height}</h2>
+					<h2>HEIGHT: {props.bio.height}</h2>
 				</InnerDiv>
 				<InnerDiv>
-					<h2>{props.bio.mass}</h2>
+					<h2>WEIGTH: {props.bio.mass}</h2>
 				</InnerDiv>
 				<InnerDiv>
-					<h2>{props.bio.skin_color}</h2>
+					<h2>SKIN COLOR: {props.bio.skin_color}</h2>
 				</InnerDiv>
 			</div>
 		</WrapperDiv>
